@@ -26,7 +26,7 @@ html, body {
 }
 
 header {
-    background-color: #F5470C;
+    background-color: #671a00;
     color: #ffffff;
     text-align: center;
     
@@ -59,26 +59,45 @@ section {
     font-size: 3.4vw;
 }
 
+section > p {
+    padding: 2em;
+}
+
 section.normal {
-    background-color: #FCA228;
+    background-color: #9c0000;
     color: #ffffff;
 }
 
 section.imagem {
     background-color: #93f781;
     color: #ffffff;
+    box-shadow: inset 6px 6px 13px 0px #0000009b;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 10px;
-    background-color: #00000084;
+    background-color: #00000099;
+    text-shadow: 1px 1px 0px black;
+    
+}
+
+section#img01 {
+    background-image: url(imagens/03.jpg);
+    background-size: cover;
+
+}
+section#img02 {
+    background-image: url(imagens/01.png);
+    background-position: center center;
+    background-size: cover;
     
 }
 
 footer {
-    background-color: #F5470C;
+    background-color: #671a00;
     color: #ffffff;
     text-align: center;
-    padding: 5px;
+    padding: 7px;
 }
