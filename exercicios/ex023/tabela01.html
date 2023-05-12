@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td { 
+            border: 1px solid blue;
+        }
+        tr.oi { color: blueviolet;
+            background-color: black;
+
+        }
+        tr.ei {
+            color: brown;
+            background-color: aqua;
+        }
+        tr.ui {
+            color: aqua;
+            background-color: black;
+        }
+        td.v {
+            background-color: rgb(255, 242, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <!--hierarquia de tabelas
+        
+        table - tabela
+        table row - linha de tabela
+        table header - cabeçalho de tabela
+        table data - dados da tabela
+    -->
+    <table>
+        <tr class="oi">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <Td>D1</Td>
+            <td>E1</td>
+        </tr>
+        <tr class="ei">
+            <td class="v">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td>D2</td>
+            <td>E2</td>
+        </tr>
+        <tr class="ui">
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td>D3</td>
+            <td>E3</td>
+        </tr>
+    </table>
+</body>
+</html>
