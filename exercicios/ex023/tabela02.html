@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            background-color: rgba(0, 0, 0, 0.817);
+            color: aliceblue;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        thead, tfoot {
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: rgb(161, 84, 233);
+            color: rgb(0, 204, 255);
+            font-weight: bolder;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.71);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1> Tabela grande</h1>
+    <table>
+        <caption>População dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Ṕopulação</th>
+                <th scope="col" style="width: 20px;">% População Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+                <td>&&</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+                <td>&&</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21 168 791</td>
+                <td>&&</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td>%%%%%</td>
+                <td>@@@@@</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
