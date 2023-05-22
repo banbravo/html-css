@@ -21,6 +21,12 @@
             border: 1px solid black;
             padding: 20px;
         }
+        col.one {
+            background-color: aqua;
+        }
+        col.two {
+            background-color: rgb(192, 154, 227);
+        }
     </style>
 </head>
 <body>
@@ -29,14 +35,14 @@
         <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">MULHERES</th>
+                <th rowspan="3" scope="rowgroup">MULHERES</th>
                 <td>KATTLEN</td>
                 <td>MATRIX</td>
                 <td>GROOT</td>
@@ -52,9 +58,109 @@
                 <td>MARGARETH</td>
                 <td>OBLIVION</td>
                 <td>JORNADAS</td>
-                <td>VIX</td>
+                <td>VIRTUS</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">HOMENS</th>
+                <td>JOHN</td>
+                <td>GLADIADOR</td>
+                <td>TROIA</td>
+                <td>CLICK</td>
+            </tr>
+            <tr>
+                <td>BAN</td>
+                <td>MATRIX</td>
+                <td>GROOT</td>
+                <td>TLOU</td>
+            </tr>
+            <tr>
+                <td>FALL</td>
+                <td>HALLO</td>
+                <td>IFINIX</td>
+                <td>GOT</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">TOTAL</th>
+                <td>XXXXX</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <colgroup>
+            <col class="one">
+            <col class="two">
+            <col class="two">
+            <col class="one">
+        </colgroup>
+        <caption>CADASTRO</caption>
+        <tr>
+            <th scope="col">NOME</th>
+            <th scope="col">SEXO</th>
+            <th scope="col">IDADE</th>
+            <th scope="col">PROFISSãO</th>
+        </tr>
+        <tr>
+            <td>SUZY</td>
+            <td>F</td>
+            <td>25</td>
+            <td>JORNALISTA</td>
+        </tr>
+        <tr>
+            <td>JOHN</td>
+            <td>M</td>
+            <td>18</td>
+            <td>PROGRAMADOR</td>
+        </tr>
+        <tr>
+            <td>KYRA</td>
+            <td>F</td>
+            <td>15</td>
+            <td>ATLETA</td>
+        </tr>
+        <tr>
+            <td>JOÂO</td>
+            <td>M</td>
+            <td>32</td>
+            <td>PQD</td>
+        </tr>
+        <tr>
+            <td>SHARON</td>
+            <td>F</td>
+            <td>12</td>
+            <td>MODELO</td>
+        </tr>
+        <tr>
+            <td>VINY</td>
+            <td>M</td>
+            <td>8</td>
+            <td>PILOTO</td>
+        </tr>
+        <tr>
+            <td>EMILY</td>
+            <td>F</td>
+            <td>50</td>
+            <td>ESTETICISTA</td>
+        </tr>
+        <tr>
+            <td>TROLL</td>
+            <td>M</td>
+            <td>38</td>
+            <td>SURFISTA</td>
+        </tr>
+        <tr>
+            <td>LARA</td>
+            <td>F</td>
+            <td>19</td>
+            <td>MANICURE</td>
+        </tr>
+        <tr>
+            <td>SONIC</td>
+            <td>M</td>
+            <td>68</td>
+            <td>MAESTRO</td>
+        </tr>
     </table>
 </body>
 </html>
